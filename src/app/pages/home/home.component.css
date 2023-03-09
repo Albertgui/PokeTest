@@ -1,0 +1,18 @@
+.btnPagina{
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.fadein img {
+  opacity: 0.5;
+  transition: 1s ease;
+}
+
+.fadein img:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.animate__animated .animate__fadeIn{
+  --animation-duration: 3s;
+}

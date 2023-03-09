@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h1>Pokemon: <img [src]="imgAnimate" alt="Animado"><small>{{ nombrePokemon | titlecase }}</small></h1>
+      <img [src]="imgPokemon" [alt]="nombrePokemon">
+    </div>
+    <div class="col-md-6 mb-4">
+      <h1>Descripcion:</h1>
+      <p class="mt-4">{{ description }}</p>
+      <h3 class="mt-4">Especie: <small>{{ especie }}</small></h3>
+    </div>
+  </div>
+</div>

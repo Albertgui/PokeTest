@@ -1,0 +1,20 @@
+<div class="container mb-5">
+  <div class="text-center">
+    <img src="../../../assets/logopokemon.png" class="img-fluid animate__animated animate__fadeInDown">
+  </div>
+  <div class="row">
+    <div class="card-columns">
+      <div class="card fadein animate__animated animate__fadeIn" *ngFor="let pokemon of pokemones">
+        <div class="card-header">
+          <h2>{{ pokemon.name | titlecase }}</h2>
+        </div>
+        <img src="../../../assets/pokeball.png" class="img-thumbnail img-top cursor" (click)="onClickPokemon(pokemon.name)">
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <button class="btn btn-primary float-left btn-large btnPagina" (click)="paginaPrevious()" *ngIf="!btnActive">Previous</button>
+    <button class="btn btn-primary float-right btn-large btnPagina" (click)="paginaNext()">Next</button>
+  </div>
+</div>
+
